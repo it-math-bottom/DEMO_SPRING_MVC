@@ -8,7 +8,11 @@ public class EchoForm implements Serializable {
 
 	private String inputText;
 	
-	public String getInutText() {
+	public String getInputText() {
 		return inputText;
 	}
+	
+//	public void setInputText(String inputText) {
+//		this.inputText = inputText;
+//	}
 }
