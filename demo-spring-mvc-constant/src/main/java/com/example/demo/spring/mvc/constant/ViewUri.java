@@ -3,7 +3,7 @@ package com.example.demo.spring.mvc.constant;
 public interface ViewUri {
 	
 	public interface Echo {
-		static final String INDEX = "/view/echo";
+		static final String INPUT = "/view/echo/input";
 	}
 	
 	public interface Sample {
