@@ -14,7 +14,7 @@ public class InputController {
 	private static final String VIEW_URL = Echo.INPUT;
 	
 	@RequestMapping(method = RequestMethod.GET)
-	public String doGetInput(Model model) {
+	public String doGet(Model model) {
 		EchoForm echoForm = new EchoForm();
 		model.addAttribute(echoForm);
 		return VIEW_URL;
