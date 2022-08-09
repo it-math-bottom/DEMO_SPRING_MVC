@@ -3,7 +3,8 @@ package com.example.demo.spring.mvc.constant;
 public interface ViewUri {
 	
 	public interface Echo {
-		static final String INPUT = "/view/echo/input";
+		static final String BASE = "/view/echo";
+		static final String ECHO = BASE;
 	}
 	
 	public interface Sample {

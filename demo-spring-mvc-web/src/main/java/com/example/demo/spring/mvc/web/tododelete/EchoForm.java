@@ -12,7 +12,7 @@ public class EchoForm implements Serializable {
 		return inputText;
 	}
 	
-//	public void setInputText(String inputText) {
-//		this.inputText = inputText;
-//	}
+	public void setInputText(String inputText) {
+		this.inputText = inputText;
+	}
 }
