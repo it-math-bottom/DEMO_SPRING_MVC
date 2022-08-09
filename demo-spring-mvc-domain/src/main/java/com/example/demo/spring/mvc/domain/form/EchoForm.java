@@ -1,4 +1,4 @@
-package com.example.demo.spring.mvc.web.tododelete;
+package com.example.demo.spring.mvc.domain.form;
 
 import java.io.Serializable;
 

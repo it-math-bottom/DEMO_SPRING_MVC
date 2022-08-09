@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.ui.Model;
 import com.example.demo.spring.mvc.constant.ViewUri.Echo;
-import com.example.demo.spring.mvc.web.tododelete.EchoForm;
+import com.example.demo.spring.mvc.domain.form.EchoForm;
 
 @Controller
 @RequestMapping(Echo.ECHO)
