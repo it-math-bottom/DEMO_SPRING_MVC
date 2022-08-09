@@ -9,12 +9,12 @@ import com.example.demo.spring.mvc.web.tododelete.EchoForm;
 
 @Controller
 @RequestMapping(Echo.INDEX)
-public class EchoIndexController {
+public class InputController {
 
-	private static final String VIEW_URL = Echo.INDEX + "/index";
+	private static final String VIEW_URL = Echo.INDEX;
 	
 	@RequestMapping(method = RequestMethod.GET)
-	public String doGetIndex(Model model) {
+	public String doGetInput(Model model) {
 		EchoForm echoForm = new EchoForm();
 		model.addAttribute(echoForm);
 		return VIEW_URL;
