@@ -8,10 +8,10 @@ import com.example.demo.spring.mvc.constant.ViewUri.Echo;
 import com.example.demo.spring.mvc.web.tododelete.EchoForm;
 
 @Controller
-@RequestMapping(Echo.INDEX)
+@RequestMapping(Echo.INPUT)
 public class InputController {
 
-	private static final String VIEW_URL = Echo.INDEX;
+	private static final String VIEW_URL = Echo.INPUT;
 	
 	@RequestMapping(method = RequestMethod.GET)
 	public String doGetInput(Model model) {
