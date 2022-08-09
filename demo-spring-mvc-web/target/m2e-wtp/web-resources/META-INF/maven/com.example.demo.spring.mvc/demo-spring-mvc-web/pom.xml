@@ -18,6 +18,11 @@
   <dependencies>
      <!-- 追加 -->
      <dependency>
+       <groupId>com.example.demo.spring.mvc</groupId>
+  	   <artifactId>demo-spring-mvc-constant</artifactId>
+       <version>0.0.1-SNAPSHOT</version>
+     </dependency>
+     <dependency>
      	<groupId>org.springframework</groupId>
      	<artifactId>spring-webmvc</artifactId>
      	<version>5.2.22.RELEASE</version>
