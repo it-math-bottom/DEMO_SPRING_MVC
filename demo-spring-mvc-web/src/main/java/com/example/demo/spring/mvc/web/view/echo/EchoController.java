@@ -17,12 +17,12 @@ public class EchoController {
 	private static final String OUTPUT_VIEW_URL = Echo.ECHO + "/output";
 	
 	@RequestMapping(method = RequestMethod.GET)
-	public String doGet(EchoForm echoForm) {
+	public String doGet(final EchoForm echoForm) {
 		return INPUT_VIEW_URL;
 	}
 	
 	@RequestMapping(method = RequestMethod.POST)
-	public String doPost(@Valid EchoForm form, BindingResult result) {
+	public String doPost(@Valid final EchoForm form, final BindingResult result) {
 		if (result.hasErrors()) {
 			return INPUT_VIEW_URL;
 		}
