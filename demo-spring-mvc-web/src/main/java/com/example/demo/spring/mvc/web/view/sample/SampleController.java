@@ -15,13 +15,12 @@ public class SampleController extends AbstractController {
 	private static final String VIEW_URL = Sample.INDEX + "/index";
 	
 	@RequestMapping(method = RequestMethod.GET)
-	public String doGetIndex() {
-		super.handleRequest(null, null, new AbstractNoFormProcess() {
+	public ModelAndView doGetIndex() {
+		return super.handleRequest(null, null, new AbstractNoFormProcess() {
 			@Override
 			public ModelAndView onMainProcess() {
 				return new ModelAndView(VIEW_URL);
 			}
 		});
-		return VIEW_URL;
 	}
 }
