@@ -11,6 +11,7 @@
 		<form:form modelAttribute="echoForm" method="POST">
 			<div>テキストを入力してください</div>
 			<div><form:input path="inputText" /></div>
+			<div><span style="color:#F00000"><form:errors path="inputText" /></span></div>
 			<div><form:button>送信</form:button></div>
 		</form:form>
 	</body>
