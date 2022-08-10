@@ -6,5 +6,5 @@ public interface IProcess<TReq, TRes> {
 	
 	TRes onValidationError();
 	
-	TRes onUnexpectedError();
+	TRes onUnExpectedError();
 }
