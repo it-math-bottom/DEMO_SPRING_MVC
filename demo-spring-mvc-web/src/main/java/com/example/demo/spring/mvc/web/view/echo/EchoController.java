@@ -9,8 +9,8 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.validation.BindingResult;
 import com.example.demo.spring.mvc.constant.ViewUri.Echo;
 import com.example.demo.spring.mvc.domain.form.EchoForm;
-import com.example.demo.spring.mvc.web.reqhandler.controller.AbstractController;
-import com.example.demo.spring.mvc.web.reqhandler.process.AbstractViewProcess;
+import com.example.demo.spring.mvc.web.httphandle.controller.AbstractController;
+import com.example.demo.spring.mvc.web.httphandle.process.AbstractViewProcess;
 
 @Controller
 @RequestMapping(Echo.ECHO)

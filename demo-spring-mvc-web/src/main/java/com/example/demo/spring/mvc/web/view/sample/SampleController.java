@@ -5,8 +5,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 import com.example.demo.spring.mvc.constant.ViewUri.Sample;
-import com.example.demo.spring.mvc.web.reqhandler.controller.AbstractController;
-import com.example.demo.spring.mvc.web.reqhandler.process.AbstractNoFormProcess;
+import com.example.demo.spring.mvc.web.httphandle.controller.AbstractController;
+import com.example.demo.spring.mvc.web.httphandle.process.AbstractNoFormProcess;
 
 @Controller
 @RequestMapping(Sample.INDEX)

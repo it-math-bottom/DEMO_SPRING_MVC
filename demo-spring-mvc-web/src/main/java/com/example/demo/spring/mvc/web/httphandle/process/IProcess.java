@@ -1,4 +1,4 @@
-package com.example.demo.spring.mvc.web.reqhandler.process;
+package com.example.demo.spring.mvc.web.httphandle.process;
 
 public interface IProcess<TReq, TRes> {
 	

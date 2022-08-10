@@ -1,4 +1,4 @@
-package com.example.demo.spring.mvc.web.reqhandler.controller;
+package com.example.demo.spring.mvc.web.httphandle.controller;
 
 import javax.validation.Valid;
 import javax.annotation.Nonnull;
@@ -6,7 +6,7 @@ import javax.annotation.Nullable;
 
 import org.springframework.validation.BindingResult;
 
-import com.example.demo.spring.mvc.web.reqhandler.process.IProcess;
+import com.example.demo.spring.mvc.web.httphandle.process.IProcess;
 
 public abstract class AbstractController {
 
