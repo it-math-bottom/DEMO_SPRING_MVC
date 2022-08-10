@@ -4,9 +4,6 @@ import javax.validation.Valid;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
-import org.springframework.beans.BeansException;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.ApplicationContextAware;
 import org.springframework.validation.BindingResult;
 
 import com.example.demo.spring.mvc.web.reqhandler.process.IProcess;
