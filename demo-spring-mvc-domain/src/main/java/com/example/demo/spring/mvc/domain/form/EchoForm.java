@@ -1,11 +1,9 @@
 package com.example.demo.spring.mvc.domain.form;
 
-import java.io.Serializable;
-
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 
-public class EchoForm implements Serializable {
+public class EchoForm implements IForm {
 
 	private static final long serialVersionUID = 1L;
 	
