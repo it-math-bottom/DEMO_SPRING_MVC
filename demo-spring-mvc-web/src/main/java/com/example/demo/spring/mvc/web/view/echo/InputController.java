@@ -1,9 +1,12 @@
 package com.example.demo.spring.mvc.web.view.echo;
 
+import javax.validation.Valid;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import com.example.demo.spring.mvc.constant.ViewUri.Echo;
 import com.example.demo.spring.mvc.domain.form.EchoForm;
 
@@ -22,7 +25,10 @@ public class InputController {
 	}
 	
 	@RequestMapping(method = RequestMethod.POST)
-	public String doPost(EchoForm form) {
+	public String doPost(@Valid EchoForm form, BindingResult result) {
+		if (result.hasErrors()) {
+			return INPUT_VIEW_URL;
+		}
 		return OUTPUT_VIEW_URL;
 	}
 }
