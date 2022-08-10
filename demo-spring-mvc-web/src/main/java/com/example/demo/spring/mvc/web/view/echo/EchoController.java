@@ -12,7 +12,7 @@ import com.example.demo.spring.mvc.domain.form.EchoForm;
 
 @Controller
 @RequestMapping(Echo.ECHO)
-public class InputController {
+public class EchoController {
 
 	private static final String INPUT_VIEW_URL = Echo.ECHO + "/input";
 	private static final String OUTPUT_VIEW_URL = Echo.ECHO + "/output";
