@@ -5,7 +5,6 @@ import javax.validation.Valid;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import com.example.demo.spring.mvc.constant.ViewUri.Echo;
 import com.example.demo.spring.mvc.domain.form.EchoForm;
@@ -18,9 +17,7 @@ public class EchoController {
 	private static final String OUTPUT_VIEW_URL = Echo.ECHO + "/output";
 	
 	@RequestMapping(method = RequestMethod.GET)
-	public String doGet(Model model) {
-		EchoForm echoForm = new EchoForm();
-		model.addAttribute(echoForm);
+	public String doGet(EchoForm echoForm) {
 		return INPUT_VIEW_URL;
 	}
 	
